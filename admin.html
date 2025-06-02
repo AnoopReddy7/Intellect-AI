@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Interface</title>
+    <link rel="stylesheet" href="adminstyle.css">
+</head>
+<body>
+    <nav>
+        <div class="main-nav container flex">
+            <h1><b>INTELLECT AI</b></h1>
+        </div>
+    </nav>
+<main>
+    <div>
+    <h1>Manage Events</h1>
+    <form id="event-form">
+        <input type="text" id="event-name" placeholder="Event Name" required>
+        <textarea id="event-description" placeholder="Event Description" required></textarea>
+        <input type="text" id="event-location" placeholder="Event Location" required>
+        <input type="date" id="event-date" placeholder="Event Date" required>
+        <input type="email" id="event-email" placeholder="Contact Email" required>
+        <input type="tel" id="event-phone" placeholder="Contact Phone" required>
+        <input type="url" id="event-website" placeholder="Contact Website" required>
+        <button type="submit">Add Event</button>
+    </form>
+    <div id="events-container"></div>
+
+    <h1>Manage Jobs</h1>
+    <form id="job-form">
+        <input type="text" id="company-name" placeholder="Company Name" required>
+        <input type="text" id="job-role" placeholder="Job Role" required>
+        <textarea id="company-details" placeholder="Company Details" required></textarea>
+        <input type="email" id="company-email" placeholder="Contact Email" required>
+        <button type="submit">Add Job</button>
+    </form>
+    <div id="jobs-container"></div>
+    </div>
+</main>
+    <script src="adminscripts.js"></script>
+    <script>
+        // Check if user is logged in
+        if (sessionStorage.getItem('isLoggedIn') !== 'true') {
+            window.location.href = 'login.html'; // Redirect to login page if not logged in
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+/* Basic styles for the login page */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #f3faff;
+    box-shadow: 0 0 4px #bbd8e2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    left: 0;
+    right: 0;
+}
+
+.main-nav {
+    justify-content: center;
+    padding-block: 8px;
+}
+
+.main-nav h1 {
+    font-size: 24px;
+}
+
+main {
+    padding-top: 80px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input, button {
+    display: block;
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
